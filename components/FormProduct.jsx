@@ -11,8 +11,12 @@ export default function FormProduct() {
 
   const handlerClick = async (e) => {
     e.preventDefault();
-    if (name !== "") {
+    if (name !== "" && !array.includes(name)) {
       setArray([...array, name]);
+    }
+
+    if (array.includes(name)) {
+      alert("Product already exists");
     }
   };
 

@@ -19,9 +19,7 @@ export default function Home() {
       <main className={`${styles.main} ${inter.className}`}>
         <Card>
           <CardHeader>Todo-List</CardHeader>
-          <div>
-            <FormProduct />
-          </div>
+          <FormProduct />
         </Card>
       </main>
     </>
