@@ -1,6 +1,6 @@
 // Styles
 
-import styles from "@/styles/FormProduct.module.css";
+import styles from "../styles/FormProduct.module.css";
 import { useEffect } from "react";
 import { useState } from "react";
 import CardProduct from "./CardProducts";
@@ -11,7 +11,9 @@ export default function FormProduct() {
 
   const handlerClick = async (e) => {
     e.preventDefault();
-    setArray([...array, name]);
+    if (name !== "") {
+      setArray([...array, name]);
+    }
   };
 
   useEffect(() => {
@@ -40,7 +42,12 @@ export default function FormProduct() {
 
       <div className={styles.groupProducts}>
         {array?.map((product, index) => (
-          <CardProduct title={product} setArray={setArray} index={index} />
+          <CardProduct
+            key={index}
+            title={product}
+            setArray={setArray}
+            index={index}
+          />
         ))}
       </div>
     </>

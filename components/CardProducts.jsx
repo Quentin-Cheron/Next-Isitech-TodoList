@@ -1,4 +1,4 @@
-import styles from "@/styles/CardProduct.module.css";
+import styles from "../styles/CardProduct.module.css";
 
 export default function CardProduct({ title, setArray, index }) {
   const deleteProduct = () => {

@@ -1,9 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import styles from "@/styles/Home.module.css";
-import Card from "@/components/Card";
-import CardHeader from "@/components/CardHeader";
-import FormProduct from "@/components/FormProduct";
+import styles from "../styles/Home.module.css";
+import Card from "../components/Card";
+import CardHeader from "../components/CardHeader";
+import FormProduct from "../components/FormProduct";
 
 const inter = Inter({ subsets: ["latin"] });
 
